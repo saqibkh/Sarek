@@ -9,6 +9,8 @@ name: CUDA tests (simulated H100)
 # real-GPU testing and does not replace it.
 
 on:
+  push:
+    branches: [verify-gpu-sim]
   pull_request:
     paths:
       - 'sarek-cuda/**'
